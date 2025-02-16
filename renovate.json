@@ -1,4 +1,8 @@
 {
+  "dependencyDashboard": true,
+  "major": { "dependencyDashboardApproval": true, "automerge": false },
+  "minor": { "dependencyDashboardApproval": true, "automerge": false },
+  "patch": { "dependencyDashboardApproval": true, "automerge": false },
   "customManagers": [
     {
       "customType": "regex",
