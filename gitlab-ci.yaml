@@ -1,0 +1,11 @@
+python_job:
+    image: python:3.11.11
+    before_script:
+        # print tool versions for debug purpose if job is failing
+        - python --version
+        # install pip and poetry
+        - pip install pip==24.3.1
+        - pip install poetry==1.6.1
+        # print tool versions for debug purpose if job is failing
+        - pip --version
+        - poetry --version
