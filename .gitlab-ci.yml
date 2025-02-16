@@ -5,7 +5,6 @@ python_job:
         - python --version
         # install pip and poetry
         - pip install pip==24.3.1
-        # comment to check regex matching the same line
         - pip install poetry==1.6.1
         # print tool versions for debug purpose if job is failing
         - pip --version
