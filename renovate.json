@@ -1,0 +1,13 @@
+{
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "RegEx Manager for pypi packages in GitLab CI/CD and Dockerfile",
+      "fileMatch": ["Dockerfile$", "\\.gitlab-ci\\.yml$"],
+      "matchStrings": [
+        "\\n((RUN)|(\\s+-))\\s+pip\\s+install\\s*(?<depName>[\\w\\.\\-]+)==(?<currentValue>[\\d\\.]+)\\s*\\n"
+      ],
+      "datasourceTemplate": "pypi"
+    }
+  ]
+}
